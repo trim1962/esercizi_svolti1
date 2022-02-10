@@ -1,0 +1,207 @@
+\chapter{Numeri Naturali}
+\label{cha:numerinaturali}
+\section{\texorpdfstring{$\mcd$}{mcd} e \texorpdfstring{$\mcm$}{mcm}}
+\label{sec:numnatmcmmcd}
+\begin{esempiot} {mcm mcd}{}
+Trovare il $\mcd$ e il $\mcm$  di \numlist{280;350;720}
+\end{esempiot}
+Iniziamo a scomporre i tre numeri
+\stampapuntini
+\begin{center}
+	\begin{forest}
+		[280
+		[28
+		[\puntini{7}]
+		[4
+		[2]
+		[\puntini{2}]
+		]
+		]
+		[10
+		[5]
+		[2]
+		]
+		]
+	\end{forest}
+	\begin{forest}
+		[350
+		[10
+		[5]
+		[2]
+		]
+		[\puntini{35}
+		[\puntini{7}]
+		[5]
+		]
+		]
+	\end{forest}
+	\begin{forest}
+		[720
+		[72
+		[9
+		[3]
+		[\puntini{3}]
+		]
+		[\puntini{8}
+		[4
+		[2]
+		[2]
+		]
+		[2]
+		]
+		]
+		[\puntini{10}
+		[5]
+		[2]
+		]
+		]
+	\end{forest}
+\end{center}
+Allineo i fattori
+
+\begin{tabular}{lcllll}
+	280 & = & \puntini{$2^3$} &  & 5  & 7 \\ 
+	250 & = & 2     &  &\puntini{$5^2$}  & 7 \\ 
+	720 & = & $2^4$ &\puntini{$3^2$}  & 5 &  \\  
+\end{tabular} 
+
+Ottengo
+
+\begin{tabular}{lclcl}
+	$\mcd$ & = & $2\cdot 5$ &=  & 10   \\ 
+	$\mcm$ & = & $\puntini{2^4}\cdot 3^2\cdot5^2\cdot \puntini{7}$ &=  & 25200  \\ 
+\end{tabular} 
+\begin{esempiot}{mcd mcm}{}
+	Trovare il $\mcd$ e il $\mcm$  di \numlist{432;270;288}
+\end{esempiot}
+Iniziamo a scomporre i tre numeri
+
+\begin{center}
+	\begin{forest}
+	[432
+	[\puntini{108}
+	[2]
+	[54
+	[6
+	[3]
+	[2]]
+	[\puntini{9}
+	[3]
+	[3]
+	]
+	]
+	]
+	[4
+	[2]
+	[2]
+	]
+	]
+\end{forest}
+\begin{forest}
+[270
+[\puntini{27}
+[3]
+[9
+[3]
+[3]
+]
+]
+[\puntini{10}
+[5]
+[2]
+]
+]	
+\end{forest}
+\begin{forest}
+	[288
+	[4
+	[2]
+	[2]
+	]
+	[\puntini{72}
+	[9
+	[3]
+	[3]
+	]
+	[\puntini{8}
+	[4
+	[2]
+	[2]
+	]
+	[\puntini{2}]
+	]
+	]
+	]
+\end{forest}
+	\end{center}
+Allineo i fattori
+
+\begin{tabular}{lclll}
+432	&=  &$\puntini{2^4}$  & $3^2$ &  \\ 
+270	& = & 2 & $\puntini{3^2}$ & 5 \\ 
+288	& = &$2^5$  &$3^2$  &  \\ 
+\end{tabular} 
+
+Ottengo
+
+\begin{tabular}{lclcl}
+$\mcd$	&  =& $2\cdot 3^2$ &=  & 18 \\ 
+$\mcm$	& = & $2^5\cdot \puntini{3^3}\cdot5$ &=  &\puntini{1440}  \\ 
+\end{tabular} 
+%\nonstampapuntini
+\begin{esempiot}{mcd mcm}{}
+	Trovare il $\mcd$ e il $\mcm$  di \numlist{70;48;78}
+\end{esempiot}
+Iniziamo a scomporre i tre numeri
+\begin{center}
+	\begin{forest}
+		[70
+		[7]
+		[10
+		[5]
+		[2]
+		]
+		]
+	\end{forest}
+	\begin{forest}
+		[48
+		[6
+		[3]
+		[2]
+		]
+		[8
+		[2]
+		[4
+		[2]
+		[2]
+		]
+		]
+		]
+	\end{forest}
+	\begin{forest}
+		[84
+		[2]
+		[42
+		[7]
+		[6
+		[3]
+		[2]
+		]
+		]
+		]
+	\end{forest}
+\end{center}
+Allineo i fattori
+
+\begin{tabular}{lcllll}
+70	& = & 2     &  & 5 & 7 \\ 
+48	& = & $2^4$ & 3 &   &   \\ 
+84	& = & $2^2$ & 3 &   &  7\\ 
+\end{tabular} 
+
+Ottengo
+
+\begin{tabular}{lclcl}
+	$\mcd$	&  =& 2 &=  & 2 \\ 
+	$\mcm$	& = & $2^4\cdot \puntini{3}\cdot5\cdot 7$ &=  &\puntini{1680}  \\
+\end{tabular} 
