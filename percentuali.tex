@@ -89,8 +89,10 @@ In un negozio mi hanno ridotto il prezzo del  \SI{24}{\percent} e ho risparmiato
 	SP=&PP-PrimoSsconto\\
 	=&PP-\dfrac{PSP\cdot PP}{100}\\
 	=&PP\left(1-\dfrac{PSP}{100}\right)\\
-	SecondoSconto=&\dfrac{SSP\cdot SP}{100}\\&\dfrac{SSP\cdot SP}{100}\\
-	
+	SecondoSconto=&\dfrac{SSP\cdot SP}{100}\\
+	=&\dfrac{SSP\}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
+	\intertext{Quindi}
+	ScontoFinale=&\dfrac{PSP\cdot PP}{100}+\dfrac{SSP\}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
 \end{align*}
 \end{exercise}
 \begin{exercise}
