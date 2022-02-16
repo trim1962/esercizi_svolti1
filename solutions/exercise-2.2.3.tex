@@ -1,18 +1,19 @@
+	In questo esempio lo sconto viene applicato due volte. Per risolverlo bisogna tener presente che il secondo sconto viene calcolato non sul prezzo iniziale ma questo nuovo importo, il quale sarà uguale a quello fissato all'inizio meno il primo sconto.
 	\begin{align*}
-	Debito={}&Pagato+Sconto\\
-	={}&Pagato+\dfrac{Sp\cdot Debito}{100}\\
-	Pagato={}&Debito-\dfrac{Sp\cdot Debito}{100}\\
-	={}&Debito\left(1-\dfrac{Sp}{100}\right)\\
-	Debito={}&\dfrac{Pagato}{1-\dfrac{Sp}{100}}\\
-	Debito={}&\dfrac{\mbox{\EUR{171}}}{1-\dfrac{24}{100}}\\
-	={}&\mbox{\EUR{225}}
+		ScontoFinale=&PrimoSconto+SecondoSconto=\mbox{\EUR{300}}\\
+		\intertext{Definiamo delle abbreviazioni}
+		Primoscontopercentuale=&PSP\\
+		Secondoscontopercentuale=&SSP\\
+		PrimoPrezzo=&PP\\
+		SecondoPrezzo=&SP\\
 	\end{align*}
-Si poteva, riflettendoci sopra, operare in questa maniera:
-\[Debito=Pagato+Sconto\]
-Quindi se lo sconto è il \SI{24}{\percent} del debito, il pagato è il \SI{76}{\percent}. Quindi
 \begin{align*}
-	P={}&\dfrac{Pagato}{Debito}\cdot100\\
-	76={}&\dfrac{\mbox{\EUR{171}}}{Debito}\cdot 100\\
-	Debito={}&\dfrac{\mbox{\EUR{171}}}{76}\cdot 100\\
-	={}&\mbox{\EUR{225}}
+	PrimoSconto=&\dfrac{PSP\cdot PP}{100}\\
+	SP=&PP-PrimoSsconto\\
+	=&PP-\dfrac{PSP\cdot PP}{100}\\
+	=&PP\left(1-\dfrac{PSP}{100}\right)\\
+	SecondoSconto=&\dfrac{SSP\cdot SP}{100}\\
+	=&\dfrac{SSP\}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
+	\intertext{Quindi}
+	ScontoFinale=&\dfrac{PSP\cdot PP}{100}+\dfrac{SSP\}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
 \end{align*}
