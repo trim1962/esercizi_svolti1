@@ -75,10 +75,23 @@ In un negozio mi hanno ridotto il prezzo del  \SI{24}{\percent} e ho risparmiato
 \begin{exercise}%[no solution]
 	Un commerciante mette in vendita una coperta praticando il \SI{10}{\percent} di sconto. Dopo un mese  la offre  scontandola del \SI{30}{\percent}. Se lo sconto complessivo è stato di \EUR{300}, quale era il prezzo iniziale?
 		\tcblower
-	In questo esempio lo sconto viene applicato due volte. Per risolverlo bisogna tener presente che il secondo sconto viene calcolato non sul prezzo iniziale ma questo nuovo importo sarà uguale a quello fissato all'inizio meno il primo sconto.
+	In questo esempio lo sconto viene applicato due volte. Per risolverlo bisogna tener presente che il secondo sconto viene calcolato non sul prezzo iniziale ma questo nuovo importo, il quale sarà uguale a quello fissato all'inizio meno il primo sconto.
 	\begin{align*}
 		ScontoFinale=&PrimoSconto+SecondoSconto=\mbox{\EUR{300}}\\
+		\intertext{Definiamo delle abbreviazioni}
+		Primoscontopercentuale=&PSP\\
+		Secondoscontopercentuale=&SSP\\
+		PrimoPrezzo=&PP\\
+		SecondoPrezzo=&SP\\
 	\end{alig*}
+\begin{align*}
+	PrimoSconto=&\dfrac{PSP\cdot PP}{100}\\
+	SP=&PP-PrimoSsconto\\
+	=&PP-\dfrac{PSP\cdot PP}{100}\\
+	=&PP\left(1-\dfrac{PSP}{100}\right)\\
+	SecondoSconto=&\dfrac{SSP\cdot SP}{100}\\&\dfrac{SSP\cdot SP}{100}\\
+	
+\end{align*}
 \end{exercise}
 \begin{exercise}
 	Pagando prima un debito ho avuto uno sconto del  \SI{24}{\percent} e pago \EUR{171}. A quanto ammontava il debito?
