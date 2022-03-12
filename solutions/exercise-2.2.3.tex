@@ -1,19 +1,23 @@
 	In questo esempio lo sconto viene applicato due volte. Per risolverlo bisogna tener presente che il secondo sconto viene calcolato non sul prezzo iniziale ma questo nuovo importo, il quale sarà uguale a quello fissato all'inizio meno il primo sconto.
 	\begin{align*}
-		ScontoFinale=&PrimoSconto+SecondoSconto=\mbox{\EUR{300}}\\
+		ScontoFinale={}&PrimoSconto+SecondoSconto=\mbox{\EUR{300}}\\
 		\intertext{Definiamo delle abbreviazioni}
-		Primoscontopercentuale=&PSP\\
-		Secondoscontopercentuale=&SSP\\
-		PrimoPrezzo=&PP\\
-		SecondoPrezzo=&SP\\
+		Primoscontopercentuale={}&PSP\\
+		Secondoscontopercentuale={}&SSP\\
+		PrimoPrezzo={}&PP\\
+		SecondoPrezzo={}&SP\\
 	\end{align*}
 \begin{align*}
-	PrimoSconto=&\dfrac{PSP\cdot PP}{100}\\
-	SP=&PP-PrimoSsconto\\
-	=&PP-\dfrac{PSP\cdot PP}{100}\\
-	=&PP\left(1-\dfrac{PSP}{100}\right)\\
-	SecondoSconto=&\dfrac{SSP\cdot SP}{100}\\
-	=&\dfrac{SSP\}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
+	PrimoSconto={}&\dfrac{PSP\cdot PP}{100}\\
+	SP={}&PP-PrimoSsconto\\
+	={}&PP-\dfrac{PSP\cdot PP}{100}\\
+	={}&PP\left(1-\dfrac{PSP}{100}\right)\\
+	SecondoSconto={}&\dfrac{SSP\cdot SP}{100}\\
+	={}&\dfrac{SSP}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
 	\intertext{Quindi}
-	ScontoFinale=&\dfrac{PSP\cdot PP}{100}+\dfrac{SSP\}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
+	ScontoFinale={}&\dfrac{PSP\cdot PP}{100}+\dfrac{SSP}{100}\cdot PP\left(1-\dfrac{PSP}{100}\right)\\
+	={}&PP\left[\dfrac{PSP}{100}+\dfrac{SSP}{100}\cdot \left(1-\dfrac{PSP}{100}\right)\right]\\
+	PP={}&\dfrac{ScontoFinale}{\dfrac{PSP}{100}+\dfrac{SSP}{100}\cdot \left(1-\dfrac{PSP}{100}\right)}\\
+	PP={}&\dfrac{300}{\dfrac{10}{100}+\dfrac{30}{100}\cdot \left(1-\dfrac{10}{100}\right)}\\
+	={}&\mbox{\EUR{810,81}}\\
 \end{align*}
